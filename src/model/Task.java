@@ -14,7 +14,7 @@ public class Task {
         this.id = nextId++;
         this.title = title;
         this.description = description;
-        this.priority = priority;
+        this.priority = priority != null ? priority : Priority.MEDIA;
         this.status = Status.POR_REALIZAR;
         this.assignedUser = assignedUser;
     }
